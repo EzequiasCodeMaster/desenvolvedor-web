@@ -1,0 +1,80 @@
+@media (min-width:391px) and (max-width:768px) {
+ 
+.link-header {
+    margin-top: 250px;
+}    
+
+.link-header a {
+    margin: 0px 200px;
+    font-size: 1.8em;
+}
+
+/*---------------------*/
+
+#apresentacao {
+    margin-top: 100px;
+}
+
+#apresentacao img {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 200px;
+    position: relative;
+    top: -350px;
+    right: -400px;
+}
+
+#apresentacao h1 {
+    position: relative;
+    left: -100px;
+    width: 100vw;
+    font-size: 3.5em;
+}
+
+#apresentacao h3 {
+    width: 100%;
+    position: relative;
+    left: -100px;
+}
+
+#apresentacao h4 {
+    position: relative;
+    left: -100px;
+}
+
+#apresentacao .div-dentro {
+    margin-top: 200px;
+}
+
+/*-----------------------*/
+
+
+#skill h1 {
+    text-align: left;
+    margin-left: 0px;
+    font-size: 3em;
+}
+
+#skill-pai {
+    margin-left: 20px;
+} 
+
+
+
+
+}
+
+/*-------------------------------*/
+
+#projetos p {
+    font-size: 1.5em;
+}
+
+iframe h1 {
+    font-size: 2em;
+}
+
+
+.ultimo-p {
+    padding-bottom: 10px;
+}
