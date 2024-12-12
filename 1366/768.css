@@ -2,10 +2,18 @@
     #projetos {
         margin-top: 200px;
     }
+
+    iframe {
+        margin-top: 100px;
+    }
 }
 
 @media screen and (min-width: 1440px) and (min-height: 900px) {
     #projetos {
+        margin-top: 100px;
+    }
+
+    iframe {
         margin-top: 100px;
     }
 }
