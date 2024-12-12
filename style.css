@@ -423,5 +423,7 @@ footer a {
     background-color: #5C4033;
     font-size: 1.8em;
     animation: pulsar 2s ease-out infinite;
-
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
