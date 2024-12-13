@@ -8,7 +8,8 @@
         overflow-x: none;
     }
     header {
-
+        position: relative;
+        top: 100px;
         margin-top: 50px;
     }
     
@@ -35,7 +36,7 @@ header h1 {
 }
 
 .link-header {
-    width: 100%;
+    width: 50%;
 }
 
 .link-header .elemento4 {
