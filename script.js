@@ -38,7 +38,7 @@ sr.reveal('.elemento', {
   //trocar a class
   
   function verificarTamanhoTela() {
-    if (window.innerWidth < 720) {
+    if (window.innerWidth < 721) {
       // Cancela o ScrollReveal
       sr.destroy(); // Remove as animações
     } else {
