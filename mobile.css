@@ -8,10 +8,16 @@
 
 @media screen and (min-width: 150px) and (max-width: 391px) {
    
+    ::-webkit-scrollbar{
+        display: none;
+        overflow-x: none;
+    }
+
 body {
+    width: 100vw;
     background-color: black;
     color: #F5DEB3;
-    overflow-x: hidden;
+    margin-left: 30px;
 }
 
 /*--------------CABECARIO DO HEADER---------------------*/
@@ -19,18 +25,23 @@ body {
 .img-header {
     display: flex;
     align-items: center;
-    height: 100px;
-    overflow: hidden;
+    height: 200px;
+    margin: 0px;
 }
 
 .foto-header {
-    width: 80px;
+    width: 100px;
     border-radius: 50%;
+    margin: 0px;
+    overflow: hidden;
 }
 
-.marca {
+.marca img {
    position: relative;
-   top: 30px;
+   top: 18px;
+   width: 300px;
+   margin: 0px;
+   margin-left: 20px;
 }
 
 header img {
