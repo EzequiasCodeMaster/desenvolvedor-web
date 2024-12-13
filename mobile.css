@@ -5,7 +5,10 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        margin-top: 500px;
+    }
+    header {
+
+        margin-top: 200px;
     }
     
 .img-header {
