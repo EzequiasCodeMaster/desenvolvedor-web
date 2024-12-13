@@ -1,178 +1,422 @@
+:root {
+    ---Dourado: #D4AF37;
+    ---Caramelo: #C19A6B;
+    ---Marrom-Escuro: #5C4033;
+    ---Bege-Claro: #F5DEB3;
+    ---Preto: #000000;
+}
+
 @media screen and (min-width: 150px) and (max-width: 391px) {
-    body {
-        width: 100vw;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        overflow-x: hidden;
+   
+body {
+    background-color: black;
+    color: #F5DEB3;
+    overflow-x: hidden;
+}
+
+/*--------------CABECARIO DO HEADER---------------------*/
+
+.img-header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+
+.foto-header {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.marca {
+   position: relative;
+   top: 30px;
+}
+
+header img {
+    margin-left: 2em;
+}
+
+/*-----------------------TEXTO DO READER --------------------------*/
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 2%;
+    margin-bottom: 0px;
+}
+
+header h1 {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin-left: 2%;
+    line-height: 1.8;
+}
+
+/*---------------- LINKS DO HEADER ----------------------------------*/
+
+.link-header {
+    display: flex;
+    width: 70%;
+    margin-left: 2%;
+    margin-top: 0px;
+}
+
+.link-header a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #D4AF37;
+    margin: 0px 300px;
+    font-size: 1.5em;
+}
+
+.link-header span {
+    margin-left: 5px;
+    color: #C19A6B;
+}
+
+/*--------------------- CONTEUDO PASSANDO INFINITO---------------*/
+
+.carrosel-frases {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 90px;
+    background-color: #5C4033;
+    overflow: hidden;
+}
+
+.carrosel-animado {
+    display: flex;
+    width: calc(200%);
+    animation: passar 10s linear infinite;
+}
+
+.carrosel-animado p {
+    font-size: 1.5em;
+    color: #F5DEB3;
+    white-space: nowrap;
+    margin: 30px;
+}
+
+@keyframes passar {
+    0% {
+        transform: translateX(0%);
     }
-    header {
-        position: relative;
-        top: 100px;
-        margin-top: 50px;
+    100% {
+        transform: translateX(-40%);
     }
+}
+
+/*----------------------APRESENTAÇÃO-----------------------------*/
+
+
+#apresentacao {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#apresentacao img {
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#apresentacao h1 {
+    font-size: 3.5em;
+    color: rgba(255, 255, 255, 0.884);
+}
+
+#apresentacao h3 {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5c4033bd;
+    margin-bottom: 0px;
+}
+
+#apresentacao h4 {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    color: #f5deb3a1;
+}
+
+.div-dentro {
+    display: flex;
+}
+
+.div-dentro div {
+    margin-right: 100px;
+    color: #5C4033;
+}
+
+.div-dentro span {
+    color: white;
+    font-size: 1.5em;
+}
+
+.div-dentro a {
+    color: #C19A6B;
+    text-decoration: none;
     
-    .img-header {
-        width: 100vw;
-        height: 100px;
-        margin: 0;
+}
+
+/*----------------------------SKILL--------------------*/
+
+#skill {
+    width: 100dvw;
+    height: 100dvh;
+    margin-left: 20px;
+    margin-bottom: 200px;
+}
+
+#skill h1 {
+    font-size: 2.5em;
+    margin-left: 6%;
+    margin-bottom: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#skill-pai {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    width: 90%;
+    margin-top: 0px;
+}
+
+#skill-pai div {
+    margin-top: 50px;
+}
+
+
+#skill h3 {
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+
+/*---------------------------PROJETOS-----------------------------*/
+
+#projetos {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.descricao-projeto {
+    width: 100%;
+    text-align: center;
+    position: static;
+}
+
+#projetos h1 {
+    font-size: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #5C4033;
+    margin-bottom: 0px;
+}
+
+#projetos .descricao-projeto p {
+    color: #D4AF37;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.projeto-descricao a {
+    font-size: 1em;
+    animation: pulsar 3s  infinite;
+}
+
+
+
+@keyframes pulsar {
+    0% {
+      transform: scale(1); 
+      opacity: 1; 
     }
-
-    .foto-header {
-        margin-left: 0;
-        width: 60px;
+    50% {
+      transform: scale(1.2); 
+      opacity: 0.7; 
     }
-
-    .marca img {
-        width: 200px;
-        margin-left: 0;
+    100% {
+      transform: scale(1); 
+      opacity: 1; 
     }
+  }
 
-    /*---------------------*/
+/*               ----------------       */
 
-    header h1 {
-        font-size: 1em;
-    }
+.projetos-filho {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 100px;
+    transform:translateY(50px);
+    transition: all 0.6s ease-out;
+}
 
-    .link-header {
-        width: 50%;
-    }
+.projetos-filho.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-    .link-header .elemento4,
-    .link-header .elemento2,
-    .link-header .elemento3 {
-        width: 20%;
-        margin: 0;
-    }
+.projetos-filho h6 {
+    color: #C19A6B;
+    font-size: 5em;
+    margin-bottom: 50px;
+}
 
-    .link-header a {
-        margin: 0;
-    }
+.projetos-filho p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F5DEB3;
+}
 
-    /*---------------------------------*/
-    #apresentacao {
-        width: 100vw;
-        position: relative;
-        left: -20px;
-    }
+.projetos-filho a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #D4AF37;
+}
 
-    #apresentacao img {
-        width: 150px;
-        margin-right: 10px;
-        position: relative;
-        top: -280px;
-        right: -250px;
-    }
+#projetos .celular {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 50px;
+    background: url(imagens/);
+    background-size: 40em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #F5DEB3;
+}
 
-    #apresentacao h1 {
-        position: relative;
-        left: 20px;
-        top: 100px;
-        width: 100vw;
-        font-size: 2em;
-    }
+#celular-img {
+    width: 86%;
+    height: 73%;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-    #apresentacao h3 {
-        width: 70%;
-        position: relative;
-        left: 20px;
-        top: 90px;
-    }
+.projeto-descricao {
+    transition: opacity 0.5s ease-in-out;
+}
 
-    #apresentacao h4 {
-        width: 69%;
-        position: relative;
-        left: 20px;
-        top: 100px;
-    }
 
-    #apresentacao .div-dentro {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        position: relative;
-        top: 100px;
-        left: 20px;
-    }
+.projeto1 {
+    position: sticky;
+}
 
-    .div-dentro span {
-        font-size: 1em;
-    }
 
-    /*--------------------------*/
-    #skill {
-        width: 100vw;
-        margin-top: 100px;
-    }
+iframe {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 300px;
+}
 
-    #skill-pai {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        margin-left: 0;
-    }
 
-    #skill-pai div {
-        width: 50%;
-    }
 
-    #skill h1 {
-        font-size: 1.8em;
-        margin-left: 0;
-    }
+/*--------------------------CONTATOS -----------------------*/
 
-    #skill img {
-        width: 70px;
-    }
+#contato {
+    width: 100dvw;
+    height: 100dvh;
+    margin-top: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
-    #skill-pai h3 {
-        font-size: 1em;
-    } 
+.contato {
+    width: 40%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5C4033;
+    border-radius: 15px;
+    font-family: sans-serif;
+}
 
-    #skill-pai p {
-        font-size: 0.5em;
-    }
+.contato a {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: #D4AF37;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-    /*----------------*/
-    #projetos {
-        margin-bottom: 0;
-    }
+.contato img {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
 
-    #projetos h1 {
-        width: 90%;
-        font-size: 2em;
-    }
+.contato p {
+    font-size: 3em;
+}
 
-    #projetos p {
-        width: 90%;
-        font-size: 1em;
-    }
 
-    iframe {
-        width: 100%;
-        height: 600px;
-        max-width: 100%;
-        border: none;
-    }
+/*------------------------------- TECNOLOGIAS UTILIZADAS------------------------*/
 
-    /*-------------------------*/
+#tecnologias {
+    width: 100dvw;
+    height: 100dvh;
+    text-align: center;
+}
 
-    #contato {
-        margin-top: 0;
-    }
+.pai {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
 
-    .contato p {
-        font-size: 1.5em;
-    }
+.pai h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+}
 
-    .ultimo-p {
-        position: relative;
-        padding-bottom: 2px;
-    }
+.pai div {
+    width: 40%;
+}
 
-    footer {
-        position: relative;
-        bottom: -90px;
-        left: -10px;
-    }
+
+/*-------------------------------FOOTER-----------------------*/
+
+footer {
+    width: 100dvw;
+    text-align: center;
+    margin-top: 200px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #D4AF37;
+}
+
+.ultimo-p {
+    left: 0;
+    bottom: 0;
+    width: 100dvw;
+    background-color: #5C4033;
+    font-size: 1.8em;
+    animation: pulsar 2s ease-out infinite;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 }
