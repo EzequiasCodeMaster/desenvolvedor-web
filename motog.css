@@ -206,7 +206,7 @@ header h1 {
     width: 100dvw;
     height: 100dvh;
     margin-left: 0px;
-    margin-bottom: 200px;
+    margin-bottom: 800px;
 }
 
 #skill h1 {
@@ -264,7 +264,7 @@ header h1 {
 }
 
 #projetos h1 {
-    font-size: 4em;
+    font-size: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #5C4033;
     margin-bottom: 0px;
@@ -303,12 +303,14 @@ header h1 {
 
 .projetos-filho {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
     width: 100%;
-    margin-top: 100px;
-    transform:translateY(50px);
-    transition: all 0.6s ease-out;
+    margin-top: 0px;
+    transform:translateY(-50px);
+    transition: all 0s ease-out;
 }
 
 .projetos-filho.visible {
@@ -318,12 +320,13 @@ header h1 {
 
 .projetos-filho h6 {
     color: #C19A6B;
-    font-size: 5em;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
 }
 
 .projetos-filho p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
     color: #F5DEB3;
 }
 
@@ -333,17 +336,18 @@ header h1 {
     color: #D4AF37;
 }
 
+.projetos-filho a img {
+    width: 350px;
+}
+
 #projetos .celular {
-    width: 600px;
-    height: 400px;
+    width: 150px;
+    height: 100px;
     overflow: hidden;
     margin-top: 50px;
-    background: url(imagens/);
-    background-size: 40em;
-    background-repeat: no-repeat;
-    background-position: center center;
     background-color: #F5DEB3;
 }
+
 
 #celular-img {
     width: 86%;
@@ -364,8 +368,9 @@ header h1 {
 
 iframe {
     width: 100%;
-    height: 70%;
+    height: 80%;
     margin-bottom: 300px;
+    background-color: wheat;
 }
 
 
@@ -408,10 +413,12 @@ iframe {
     width: 20%;
     height: auto;
     border-radius: 50%;
+    margin-left: 10px;
 }
 
 .contato p {
-    font-size: 3em;
+    font-size: 1.5em;
+    
 }
 
 
