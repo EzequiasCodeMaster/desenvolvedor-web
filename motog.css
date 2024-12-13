@@ -140,7 +140,7 @@ header h1 {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 100px;
 }
 
 #apresentacao img {
@@ -207,6 +207,7 @@ header h1 {
     height: 100dvh;
     margin-left: 0px;
     margin-bottom: 800px;
+    margin-top: 150px;
 }
 
 #skill h1 {
@@ -255,6 +256,7 @@ header h1 {
 #projetos {
     width: 100dvw;
     height: 100dvh;
+    margin-top: 200px;
 }
 
 .descricao-projeto {
