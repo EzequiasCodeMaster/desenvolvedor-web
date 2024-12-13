@@ -92,10 +92,10 @@ header h1 {
 /*--------------------- CONTEUDO PASSANDO INFINITO---------------*/
 
 .carrosel-frases {
-    position: relative;
+    position: absolute;
     left: 0;
-    bottom: -230px;
-    width: 200%;
+    bottom: -270px;
+    width: 150%;
     height: 90px;
     background-color: #5C4033;
     overflow: hidden;
@@ -103,7 +103,6 @@ header h1 {
 
 .carrosel-animado {
     display: flex;
-    width: 700px;
     animation: passar 10s linear infinite;
 }
 
