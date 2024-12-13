@@ -5,12 +5,13 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 500px;
     }
     
 .img-header {
     width: 100dvw;
     height: 100px;
+    margin: 0px 0px;
 }
 
 .foto-header {
@@ -20,7 +21,7 @@
 
 .marca img{
     width: 500px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 /*---------------------*/
