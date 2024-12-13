@@ -137,41 +137,51 @@ header h1 {
     width: 100dvw;
     height: 100dvh;
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 #apresentacao img {
-    width: 300px;
+    width: 150px;
     border-radius: 50%;
     margin-right: 30px;
 }
 
 #apresentacao h1 {
-    font-size: 3.5em;
+    text-align: center;
+    font-size: 1.8em;
     color: rgba(255, 255, 255, 0.884);
 }
 
 #apresentacao h3 {
-    font-size: 2em;
+    text-align: center;
+    width: 90%;
+    font-size: 1.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #5c4033bd;
+    margin-left: 20px;
     margin-bottom: 0px;
 }
 
 #apresentacao h4 {
-    font-size: 1.5em;
+    width: 85%;
+    font-size: 1.3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 10px;
+    text-align: start;
+    margin-top: 15px;
+    margin-left: 30px;
     color: #f5deb3a1;
 }
 
 .div-dentro {
     display: flex;
+    margin-left: 30px;
 }
 
 .div-dentro div {
-    margin-right: 100px;
+    margin-right: 20px;
     color: #5C4033;
 }
 
