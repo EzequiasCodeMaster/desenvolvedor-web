@@ -9,7 +9,7 @@
     }
     header {
 
-        margin-top: 200px;
+        margin-top: 50px;
     }
     
 .img-header {
@@ -24,24 +24,18 @@
 }
 
 .marca img{
-    width: 500px;
+    width: 200px;
     margin-left: 0px;
 }
 
 /*---------------------*/
 
 header h1 {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .link-header {
     width: 100%;
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: space-around;
-    position: relative;
-    margin-top: 200px;
-    left: -40px;
 }
 
 .link-header .elemento4 {
