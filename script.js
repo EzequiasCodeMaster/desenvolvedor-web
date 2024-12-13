@@ -33,4 +33,23 @@ sr.reveal('.elemento', {
     origin: 'bottom', // De onde a animação começa (top, bottom, left, right)
     scale: 1.8, // Tamanho inicial
   });
+
+
+  //trocar a class
+  
+  function verificarTamanhoTela() {
+    if (window.innerWidth < 720) {
+      // Cancela o ScrollReveal
+      sr.destroy(); // Remove as animações
+    } else {
+      // Reaplica o ScrollReveal
+      sr.reveal('.reveal');
+    }
+  }
+
+  // Verifica o tamanho da tela ao carregar a página
+  verificarTamanhoTela();
+
+  // Adiciona um listener para verificar quando a janela é redimensionada
+  window.addEventListener('resize', verificarTamanhoTela);
   
