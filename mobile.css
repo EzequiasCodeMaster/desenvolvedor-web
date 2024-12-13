@@ -73,8 +73,8 @@ header h1 {
 
 .link-header {
     display: flex;
-    flex-flow: column;
-    width: 100%;
+    flex-flow: column-reverse nowrap;
+    width: 70%;
     margin-left: 2%;
     margin-top: 0px;
 }
@@ -83,8 +83,12 @@ header h1 {
     text-decoration: none;
     font-family: sans-serif;
     color: #D4AF37;
-    margin: 0px 300px;
+    margin: 0px 0px;
     font-size: 1.5em;
+}
+
+.elemento2, .elemento3, .elemento4 {
+    margin: 0;
 }
 
 .link-header span {
