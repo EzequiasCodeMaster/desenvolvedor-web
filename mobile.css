@@ -10,14 +10,15 @@
    
     ::-webkit-scrollbar{
         display: none;
-        overflow-x: none;
+        overflow-x: hidden;
     }
 
 body {
     width: 100vw;
     background-color: black;
     color: #F5DEB3;
-    margin-left: 30px;
+    margin-left: 15px;
+    overflow-x: hidden;
 }
 
 /*--------------CABECARIO DO HEADER---------------------*/
@@ -25,7 +26,8 @@ body {
 .img-header {
     display: flex;
     align-items: center;
-    height: 200px;
+    width: 100vw;
+    height: 100px;
     margin: 0px;
 }
 
@@ -39,7 +41,7 @@ body {
 .marca img {
    position: relative;
    top: 18px;
-   width: 300px;
+   width: 200px;
    margin: 0px;
    margin-left: 20px;
 }
