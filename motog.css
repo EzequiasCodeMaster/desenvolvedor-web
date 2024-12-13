@@ -110,7 +110,7 @@ header h1 {
 
 .carrosel-animado {
     display: flex;
-    width: calc(200%);
+    width: calc(100%);
     animation: passar 10s linear infinite;
 }
 
