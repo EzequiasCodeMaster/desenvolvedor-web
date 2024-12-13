@@ -1,11 +1,10 @@
-@media  (max-width:391px) {
-    
+@media screen and (min-width: 150px) and (max-width: 391px) {
     body {
-        width: 100dvw;
+        width: 100vw;
         display: flex;
-        flex-flow: column;
+        flex-flow: row wrap;
         justify-content: center;
-        overflow-x: none;
+        overflow-x: hidden;
     }
     header {
         position: relative;
@@ -13,178 +12,167 @@
         margin-top: 50px;
     }
     
-.img-header {
-    width: 100dvw;
-    height: 100px;
-    margin: 0px 0px;
-}
+    .img-header {
+        width: 100vw;
+        height: 100px;
+        margin: 0;
+    }
 
-.foto-header {
-    margin-left: 0px;
-    width: 60px;
-}
+    .foto-header {
+        margin-left: 0;
+        width: 60px;
+    }
 
-.marca img{
-    width: 200px;
-    margin-left: 0px;
-}
+    .marca img {
+        width: 200px;
+        margin-left: 0;
+    }
 
-/*---------------------*/
+    /*---------------------*/
 
-header h1 {
-    font-size: 1em;
-}
+    header h1 {
+        font-size: 1em;
+    }
 
-.link-header {
-    width: 50%;
-}
+    .link-header {
+        width: 50%;
+    }
 
-.link-header .elemento4 {
-    width: 20%;
-    margin: 0px 0px;
-}
+    .link-header .elemento4,
+    .link-header .elemento2,
+    .link-header .elemento3 {
+        width: 20%;
+        margin: 0;
+    }
 
-.link-header .elemento2 {
-    width: 20%;
-    margin: 0px 0px;
-}
+    .link-header a {
+        margin: 0;
+    }
 
-.link-header .elemento3 {
-    width: 20%;
-    margin: 0px 0px;
-}
+    /*---------------------------------*/
+    #apresentacao {
+        width: 100vw;
+        position: relative;
+        left: -20px;
+    }
 
-.link-header a {
-    margin: 0px;
-}
+    #apresentacao img {
+        width: 150px;
+        margin-right: 10px;
+        position: relative;
+        top: -280px;
+        right: -250px;
+    }
 
-/*---------------------------------*/
-#apresentacao {
-    width: 100dvw;
-    position: relative;
-    left: -20px;
-}
+    #apresentacao h1 {
+        position: relative;
+        left: 20px;
+        top: 100px;
+        width: 100vw;
+        font-size: 2em;
+    }
 
-#apresentacao img {
-    width: 150px;
-    margin-right: 10px;
-    position: relative;
-    top: -280px;
-    right: -250px;
-}
+    #apresentacao h3 {
+        width: 70%;
+        position: relative;
+        left: 20px;
+        top: 90px;
+    }
 
-#apresentacao h1 {
-    position: relative;
-    left: 20px;
-    top: 100px;
-    width: 100vw;
-    font-size: 2em;
-}
+    #apresentacao h4 {
+        width: 69%;
+        position: relative;
+        left: 20px;
+        top: 100px;
+    }
 
-#apresentacao h3 {
-    width: 70%;
-    position: relative;
-    left: 20px;
-    top: 90px;
-}
+    #apresentacao .div-dentro {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        position: relative;
+        top: 100px;
+        left: 20px;
+    }
 
-#apresentacao h4 {
-    width: 69%;
-    position: relative;
-    left: 20px;
-    top: 100px;
-}
+    .div-dentro span {
+        font-size: 1em;
+    }
 
-#apresentacao .div-dentro {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    position: relative;
-    top: 100px;
-    left: 20px;
-}
+    /*--------------------------*/
+    #skill {
+        width: 100vw;
+        margin-top: 100px;
+    }
 
-.div-dentro span {
-    font-size: 1em;
-}
+    #skill-pai {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 0;
+    }
 
-/*--------------------------*/
-#skill {
-    width: 100vw;
-    margin-top: 100px;
-}
+    #skill-pai div {
+        width: 50%;
+    }
 
-#skill-pai {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 0px;
-}
+    #skill h1 {
+        font-size: 1.8em;
+        margin-left: 0;
+    }
 
-#skill-pai div {
-    width: 50%;
-}
+    #skill img {
+        width: 70px;
+    }
 
-#skill h1 {
-    font-size: 1.8em;
-    margin-left: 0px;
-}
+    #skill-pai h3 {
+        font-size: 1em;
+    } 
 
-#skill img {
-    width: 70px;
-}
+    #skill-pai p {
+        font-size: 0.5em;
+    }
 
-#skill-pai h3 {
-    font-size: 1em;
-} 
+    /*----------------*/
+    #projetos {
+        margin-bottom: 0;
+    }
 
-#skill-pai p {
-    font-size: .5em;
-}
+    #projetos h1 {
+        width: 90%;
+        font-size: 2em;
+    }
 
-/*----------------*/
-#projetos {
-    margin-bottom: 0px;
-}
+    #projetos p {
+        width: 90%;
+        font-size: 1em;
+    }
 
-#projetos h1 {
-    width: 90%;
-    font-size: 2em;
-}
+    iframe {
+        width: 100%;
+        height: 600px;
+        max-width: 100%;
+        border: none;
+    }
 
-#projetos p {
-    width: 90%;
-    font-size: 1.em;
-}
+    /*-------------------------*/
 
-iframe {
-    width: 100%;  /* Faz o iframe ocupar toda a largura disponível */
-    height: 600px; /* Ajusta a altura automaticamente */
-    max-width: 100%; /* Garante que o iframe não ultrapasse a largura da tela */
-    border: none;  /* Remove bordas */
-}
+    #contato {
+        margin-top: 0;
+    }
 
-/*-------------------------*/
+    .contato p {
+        font-size: 1.5em;
+    }
 
-#contato {
-    margin-top: 0px;
-}
+    .ultimo-p {
+        position: relative;
+        padding-bottom: 2px;
+    }
 
-.contato p {
-    font-size: 1.5em;
-}
-
-.ultimo-p {
-    position: relative;
-    padding-bottom: 2px;
-}
-
-footer {
-    position: relative;
-    bottom: -90px;
-    left: -10px;
-}
-
-
-
+    footer {
+        position: relative;
+        bottom: -90px;
+        left: -10px;
+    }
 }
