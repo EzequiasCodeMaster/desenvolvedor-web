@@ -290,6 +290,8 @@ header h1 {
 
 
 
+
+
 @keyframes pulsar {
     0% {
       transform: scale(1); 
@@ -355,9 +357,8 @@ header h1 {
 }
 
 
-#celular-img {
-    width: 86%;
-    height: 73%;
+.celular a img {
+    width: 66%;
     border-radius: 5px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
