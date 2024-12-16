@@ -284,6 +284,10 @@ header h1 {
     animation: pulsar 3s  infinite;
 }
 
+.projeto-descricao div p {
+    font-size: 1em;
+}
+
 
 
 @keyframes pulsar {
