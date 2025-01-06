@@ -201,7 +201,7 @@ header h1 {
 }
 
 #skill-pai div {
-    width: 500px;
+    width: 30%;
     margin-top: 50px;
 }
 
@@ -221,6 +221,7 @@ header h1 {
 #projetos {
     width: 100dvw;
     height: 100dvh;
+    margin-top: 100px;
 }
 
 .descricao-projeto {
