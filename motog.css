@@ -82,14 +82,14 @@ header h1 {
     text-decoration: none;
     font-family: sans-serif;
     color: #D4AF37;
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin: 0px;
 }
 
 header .elemento2, .elemento3, .elemento4 {
     position: relative;
     top: 10px;
-    margin: 0px 20px;
+    margin: 0px 15px;
 }
 
 .link-header span {
