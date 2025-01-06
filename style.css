@@ -194,14 +194,19 @@ header h1 {
 
 #skill-pai {
     display: flex;
-    justify-content: space-around;
-    flex-flow: row nowrap;
+    justify-content: center;
+    flex-flow: row wrap;
     width: 90%;
     margin-top: 0px;
 }
 
 #skill-pai div {
+    width: 500px;
     margin-top: 50px;
+}
+
+#skill-pai .elemento, .elemento2, .elemento3, .elemento4 {
+    text-align: center;
 }
 
 

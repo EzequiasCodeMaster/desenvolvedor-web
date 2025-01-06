@@ -424,7 +424,6 @@ iframe {
     width: 20%;
     height: auto;
     border-radius: 50%;
-    margin-left: 10px;
 }
 
 .contato p {
@@ -436,13 +435,13 @@ iframe {
 /*------------------------------- TECNOLOGIAS UTILIZADAS------------------------*/
 
 #tecnologias {
-    width: 100dvw;
+    width: 99dvw;
     height: 100dvh;
     text-align: center;
 }
 
 .pai {
-    width: 100%;
+    width: 99%;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -483,7 +482,6 @@ footer a {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-left: -10px;
     margin-bottom: -10px;
 }
 }
