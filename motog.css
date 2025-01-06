@@ -14,7 +14,7 @@
     }
 
 body {
-    width: 100vw;
+    width: 352px;
     background-color: black;
     color: #F5DEB3;
     margin-left: 10px;
@@ -75,7 +75,7 @@ header h1 {
     flex-flow: row nowrap;
     width: 70%;
     height: 200px;
-    margin-left: 2%;
+    margin-left: 1%;
     margin-top: 0px;
 }
 
@@ -83,17 +83,20 @@ header h1 {
     text-decoration: none;
     font-family: sans-serif;
     color: #D4AF37;
-    margin-right: 100px;
-    font-size: 1.5em;
+    margin-right: 0px;
+    font-size: 1.3em;
 }
 
 .elemento2, .elemento3, .elemento4 {
-    margin-right: 30px;
+    margin-right: 0px;
+    position: relative;
+    top: -30px;
 }
 
 .link-header span {
     margin-left: 5px;
     color: #C19A6B;
+    position: relative;
 }
 
 /*--------------------- CONTEUDO PASSANDO INFINITO---------------*/
