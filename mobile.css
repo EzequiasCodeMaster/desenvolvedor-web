@@ -14,7 +14,7 @@
     }
 
 body {
-    width: 100vw;
+    width: 99vw;
     background-color: black;
     color: #F5DEB3;
     margin-left: 15px;
@@ -26,13 +26,13 @@ body {
 .img-header {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 99vw;
     height: 100px;
-    margin: 0px;
+    margin: 10px;
 }
 
 .foto-header {
-    width: 100px;
+    width: 80px;
     border-radius: 50%;
     margin: 0px;
     overflow: hidden;
@@ -40,8 +40,8 @@ body {
 
 .marca img {
    position: relative;
-   top: 18px;
-   width: 200px;
+   top: 0px;
+   width: 60vw;
    margin: 0px;
    margin-left: 20px;
 }
@@ -54,8 +54,8 @@ header img {
 
 header {
     display: flex;
-    flex-flow: row wrap;
-    width: 100vw;
+    flex-flow: column nowrap;
+    width: 99.5vw;
     height: 100vh;
     margin-left: 2%;
     margin-bottom: 0px;
@@ -64,19 +64,19 @@ header {
 header h1 {
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5em;
+    font-size: 7vw;
     margin-left: 2%;
-    line-height: 1.8;
+    line-height: 1.3;
 }
 
 /*---------------- LINKS DO HEADER ----------------------------------*/
 
 .link-header {
     display: flex;
-    flex-flow: column-reverse wrap;
-    width: 70%;
+    flex-flow: row nowrap;
+    width: 90vw;
     margin-left: 2%;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .link-header a {
@@ -84,11 +84,12 @@ header h1 {
     font-family: sans-serif;
     color: #D4AF37;
     margin: 0px 0px;
-    font-size: 1.5em;
+    font-size: 6vw;
 }
 
 .elemento2, .elemento3, .elemento4 {
     margin: 0;
+    overflow: hidden;
 }
 
 .link-header span {
@@ -101,7 +102,7 @@ header h1 {
 .carrosel-frases {
     position: absolute;
     left: 0;
-    bottom: -270px;
+    bottom: 0px;
     width: 150%;
     height: 90px;
     background-color: #5C4033;
@@ -136,47 +137,56 @@ header h1 {
     width: 100dvw;
     height: 100dvh;
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 #apresentacao img {
-    width: 300px;
+    width: 60vw;
     border-radius: 50%;
     margin-right: 30px;
 }
 
 #apresentacao h1 {
-    font-size: 3.5em;
+    text-align: center;
+    font-size: 6vw;
     color: rgba(255, 255, 255, 0.884);
 }
 
 #apresentacao h3 {
-    font-size: 2em;
+    text-align: center;
+    font-size: 4vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #5c4033bd;
     margin-bottom: 0px;
+    margin-right: 25px;
 }
 
 #apresentacao h4 {
-    font-size: 1.5em;
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 5vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
+    margin: 10px 20px;
     color: #f5deb3a1;
 }
 
 .div-dentro {
     display: flex;
+    
 }
 
-.div-dentro div {
-    margin-right: 100px;
+.div-dentro .doido {
+    margin-right: 0px;
     color: #5C4033;
 }
 
 .div-dentro span {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .div-dentro a {
@@ -191,11 +201,11 @@ header h1 {
     width: 100dvw;
     height: 100dvh;
     margin-left: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 #skill h1 {
-    font-size: 2.5em;
+    font-size: 5vw;
     margin-left: 6%;
     margin-bottom: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -215,8 +225,12 @@ header h1 {
 
 
 #skill h3 {
-    font-size: 2em;
+    font-size: 1vw;
     margin-top: 0px;
+}
+
+#skill img {
+    width: 20vw;
 }
 
 
@@ -228,19 +242,20 @@ header h1 {
 }
 
 .descricao-projeto {
-    width: 100%;
+    width: 98%;
     text-align: center;
     position: static;
 }
 
 #projetos h1 {
-    font-size: 4em;
+    font-size: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #5C4033;
     margin-bottom: 0px;
 }
 
 #projetos .descricao-projeto p {
+    margin-right: 10px;
     color: #D4AF37;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -260,7 +275,7 @@ header h1 {
       opacity: 1; 
     }
     50% {
-      transform: scale(1.2); 
+      transform: scale(1.1); 
       opacity: 0.7; 
     }
     100% {
@@ -271,71 +286,33 @@ header h1 {
 
 /*               ----------------       */
 
-.projetos-filho {
+
+#mobile-projeto {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 100px;
-    transform:translateY(50px);
-    transition: all 0.6s ease-out;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
 }
 
-.projetos-filho.visible {
-    opacity: 1;
-    transform: translateY(0);
+#mobile-projeto img {
+    width: 80vw;
+    margin-right: 10vw;
 }
 
-.projetos-filho h6 {
-    color: #C19A6B;
-    font-size: 5em;
-    margin-bottom: 50px;
+#mobile-projeto h6 {
+    font-size: 10vw;
+    margin-right: 10vw;
 }
 
-.projetos-filho p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #F5DEB3;
+#mobile-projeto p, a {
+    margin-right: 10vw;
 }
-
-.projetos-filho a {
-    font-size: 1.4em;
-    text-decoration: none;
-    color: #D4AF37;
-}
-
-#projetos .celular {
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-    margin-top: 50px;
-    background: url(imagens/);
-    background-size: 40em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #F5DEB3;
-}
-
-#celular-img {
-    width: 86%;
-    height: 73%;
-    border-radius: 5px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.projeto-descricao {
-    transition: opacity 0.5s ease-in-out;
-}
-
-
-.projeto1 {
-    position: sticky;
-}
-
 
 iframe {
     width: 100%;
     height: 70%;
-    margin-bottom: 300px;
+    margin-bottom: 0px;
+    margin-right: 200px;
 }
 
 
@@ -345,14 +322,14 @@ iframe {
 #contato {
     width: 100dvw;
     height: 100dvh;
-    margin-top: 300px;
+    margin-top: 100px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .contato {
-    width: 40%;
+    width: 40vw;
     height: 15%;
     display: flex;
     align-items: center;
@@ -360,6 +337,13 @@ iframe {
     background-color: #5C4033;
     border-radius: 15px;
     font-family: sans-serif;
+    margin-right: 20px;
+    transition: width 1s ;
+}
+
+.contato:hover {
+    background-color:  #5c403365;
+    width: 41vw;
 }
 
 .contato a {
@@ -374,6 +358,12 @@ iframe {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.contato a:hover {
+    color: #C19A6B;
+    cursor: pointer;
+}
+
+
 .contato img {
     width: 20%;
     height: auto;
@@ -381,7 +371,11 @@ iframe {
 }
 
 .contato p {
-    font-size: 3em;
+    font-size: 150%;
+}
+
+.contato .elemento {
+    margin: 0px;
 }
 
 
@@ -400,6 +394,10 @@ iframe {
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin-top: 50px;
+}
+
+#tecnologias h1 {
+    font-size: 5vw;
 }
 
 .pai h2 {
@@ -426,14 +424,21 @@ footer a {
 }
 
 .ultimo-p {
-    left: 0;
-    bottom: 0;
+    position: relative;
+    left: -20px;
+    bottom: -10px;
     width: 100dvw;
     background-color: #5C4033;
-    font-size: 1.8em;
-    animation: pulsar 2s ease-out infinite;
+    padding-left: 20px;
+    font-size: 1em;
     align-items: center;
     justify-content: center;
     display: flex;
+    animation: none;
+}
+
+.ultimo-p p {
+    animation:pulsar 2s ease-in-out infinite;
+
 }
 }
